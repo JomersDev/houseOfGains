@@ -2,6 +2,7 @@ require('dotenv').config()
 
 const express = require('express')
 const mongoose = require('mongoose')
+const programRoutes = require('./routes/programs')
 const cors = require('cors')
 
 // creating the express app
@@ -18,14 +19,7 @@ app.use((req, res, next) => {
 })
 
 // routes
-app.use('/api/programs/create', (req, res) => {
-  res.status(200).json({mssg: "create program"})
-})
-
-app.use('/api/programs', (req, res) => {
-  res.status(200).json({mssg: "all programs"})
-})
-
+app.use('/api/programs', programRoutes)
 
 // connect to db
 mongoose.connect(process.env.MONGO_URI)
