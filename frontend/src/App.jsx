@@ -1,4 +1,8 @@
 import { useState, useEffect } from "react"
+import ProgramForm from "./components/ProgramForm"
+
+//components
+
 
 function App() {
 
@@ -16,10 +20,11 @@ function App() {
   console.log(programs)
 
   return (
-    <div className="bg-gray-200 w-screen h-screen">
+    <div className="w-screen h-screen bg-gray-200">
       {programs && programs.map((program) => (
         <h1 key={program._id}>{program.title}</h1>
       ))}
+      <ProgramForm />
     </div>
   )
 }
