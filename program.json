@@ -1,0 +1,165 @@
+{
+    "title": "ULTIMATE Push Pull Legs by Jonni Shreve",
+    "description": "The push/pull/legs split is one of the simplest, most enduring and popular workout routines there is. And it’s also extremely effective; assuming of course that it’s done right.",
+    "days": [
+        {
+            "title": "Push A",
+            "exercises": [
+                {
+                    "exercise": "15° Incline Dumbbell Press",
+                    "sets": "3",
+                    "reps": "8-12",
+                    "rest": "1-2 mins"
+                },
+                {
+                    "exercise": "Incline Machine Chest Press",
+                    "sets": "3",
+                    "reps": "10-15",
+                    "rest": "1-2 mins"
+                },
+                {
+                    "exercise": "Pec Dec (Machine Fly)",
+                    "sets": "3",
+                    "reps": "15-20",
+                    "rest": "1-2 mins"
+                },
+                {
+                    "exercise": "Standing Overhead Press",
+                    "sets": "3",
+                    "reps": "10-12",
+                    "rest": "1-2 mins"
+                },
+                {
+                    "exercise": "3 Motion Lateral Raise (Triset)",
+                    "sets": "3",
+                    "reps": "10-15",
+                    "rest": "1-2 mins",
+                    "notes": "Seated postion - dumbbells either side. First movement front raise, second movement lateral raise, last movement front raise dumbbells together"
+                },
+                {
+                    "exercise": "Machine Dips",
+                    "sets": "3",
+                    "reps": "10-15",
+                    "rest": "1-2 mins"
+                },
+                {
+                    "exercise": "Skull Crusher",
+                    "sets": "3",
+                    "reps": "10-15",
+                    "rest": "1-2 mins",
+                    "superset": "true"
+                },
+                {
+                    "exercise": "Close Grip Press",
+                    "sets": "3",
+                    "reps": "10-15",
+                    "rest": "1-2 mins",
+                    "superset": "true"
+                }
+            ]
+        },
+        {
+            "title": "Pull A",
+            "exercises": [
+                {
+                    "exercise": "Supindated Lat Pulldowns",
+                    "sets": "3",
+                    "reps": "10-15",
+                    "rest": "1-2 mins",
+                    "notes": "Perform triple drop sets for this exercise. Drop the weight by 10-20% each time (2 drops in total)"
+                },
+                {
+                    "exercise": "Rack Pulls",
+                    "sets": "4",
+                    "reps": "6-12",
+                    "rest": "2-3 mins"
+                },
+                {
+                    "exercise": "T-Bar Row",
+                    "sets": "3",
+                    "reps": "10-12",
+                    "rest": "1-2 mins",
+                    "notes": "rest-pause sets"
+                },
+                {
+                    "exercise": "Seated Chest Supported Row",
+                    "sets": "3",
+                    "reps": "10-12",
+                    "rest": "1-2 mins"
+                },
+                {
+                    "exercise": "Dumbbell Pull-Overs",
+                    "sets": "3",
+                    "reps": "10-15",
+                    "rest": "1-2 mins",
+                    "notes": "Seated postion - dumbbells either side. First movement front raise, second movement lateral raise, last movement front raise dumbbells together"
+                },
+                {
+                    "exercise": "Preacher Curls",
+                    "sets": "2",
+                    "reps": "10-15",
+                    "rest": "1-2 mins",
+                    "notes": "Perform triple drop sets for this exercise. Drop the weight by 10-20% each time (2 drops in total)"
+                },
+                {
+                    "exercise": "Dumbbell Hammer Curls",
+                    "sets": "2",
+                    "reps": "10-15",
+                    "rest": "1-2 mins",
+                    "notes": "Perform triple drop sets for this exercise. Drop the weight by 10-20% each time (2 drops in total)"
+                }
+            ]
+        },
+        {
+            "title": "Legs A",
+            "exercises": [
+                {
+                    "exercise": "Neutral Stance Leg Press",
+                    "sets": "3",
+                    "reps": "10-15",
+                    "rest": "1-2 mins",
+                    "notes": "Perform triple drop sets for this exercise. Drop the weight by 10-20% each time (2 drops in total)"
+                },
+                {
+                    "exercise": "Hack Squat",
+                    "sets": "3",
+                    "reps": "8-12",
+                    "rest": "1-2 mins"
+                },
+                {
+                    "exercise": "Bulgarian Split Squats",
+                    "sets": "3",
+                    "reps": "10-15",
+                    "rest": "1-2 mins"
+                },
+                {
+                    "exercise": "Calf Raise",
+                    "sets": "4",
+                    "reps": "10-15",
+                    "rest": "1-2 mins"
+                },
+                {
+                    "exercise": "Dumbbell Pull-Overs",
+                    "sets": "3",
+                    "reps": "10-15",
+                    "rest": "1-2 mins",
+                    "notes": "Seated postion - dumbbells either side. First movement front raise, second movement lateral raise, last movement front raise dumbbells together"
+                },
+                {
+                    "exercise": "Preacher Curls",
+                    "sets": "2",
+                    "reps": "10-15",
+                    "rest": "1-2 mins",
+                    "notes": "Perform triple drop sets for this exercise. Drop the weight by 10-20% each time (2 drops in total)"
+                },
+                {
+                    "exercise": "Dumbbell Hammer Curls",
+                    "sets": "2",
+                    "reps": "10-15",
+                    "rest": "1-2 mins",
+                    "notes": "Perform triple drop sets for this exercise. Drop the weight by 10-20% each time (2 drops in total)"
+                }
+            ]
+        }
+    ]
+}

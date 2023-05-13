@@ -6,7 +6,8 @@ export default function ProgramForm() {
 
   const { fields, append, remove } = useFieldArray({
     control,
-    name: "test"
+    name: "days",
+    nestedArray: [{ field1: "append", field2: "append" }]
   });
 
   const onSubmit = data => console.log(data);
@@ -20,10 +21,10 @@ export default function ProgramForm() {
       <ul className="flex flex-col gap-y-2">
         {fields.map((item, index) => (
           <li key={item.id} className="flex flex-col gap-y-2">
-            <input placeholder="Bench Press"{...register(`test.${index}.exercise`)} />
-            <input placeholder="4"{...register(`test.${index}.sets`)} />
-            <input placeholder="8-12"{...register(`test.${index}.reps`)} />
-            <input placeholder="1 min"{...register(`test.${index}.rest`)} />
+            <input placeholder="Bench Press"{...register(`days.${index}.exercise`)} />
+            <input placeholder="4"{...register(`days.${index}.sets`)} />
+            <input placeholder="8-12"{...register(`days.${index}.reps`)} />
+            <input placeholder="1 min"{...register(`days.${index}.rest`)} />
             <button type="button" onClick={() => remove(index)}>Remove</button>
           </li>
         ))}
