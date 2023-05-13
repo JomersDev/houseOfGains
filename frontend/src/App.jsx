@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react"
 import ProgramForm from "./components/ProgramForm"
+import { Routes, Route } from 'react-router-dom'
 
-//components
-
+// components & pages
+import Home from "./pages/Home"
+import ProgramDetails from "./pages/ProgramDetails"
 
 function App() {
 
-  const [programs, setPrograms] = useState(null)
+  const [programs, setPrograms] = useState([])
 
   useEffect(() => {
     const fetchWorkouts = async () => {
@@ -21,10 +23,10 @@ function App() {
 
   return (
     <div className="w-screen h-screen bg-gray-200">
-      {programs && programs.map((program) => (
-        <h1 key={program._id}>{program.title}</h1>
-      ))}
-      <ProgramForm />
+      <Routes>
+        <Route path="/" element={<Home programs={programs}/>} />
+        <Route path="/:id" element={<ProgramDetails programs={programs}/>} />
+      </Routes>
     </div>
   )
 }
