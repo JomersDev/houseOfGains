@@ -13,7 +13,9 @@ const programSchema = new Schema({
         exercise: String,
         sets: String,
         reps: String, 
-        rest: String  
+        rest: String,
+        notes: String,
+        superset: Boolean  
       }
     ]
 	}
