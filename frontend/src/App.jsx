@@ -5,7 +5,8 @@ import { useProgramStore } from "./stateManagement/ProgramStore"
 // components & pages
 import Home from "./pages/Home"
 import ProgramDetails from "./pages/ProgramDetails"
-import ProgramForm from "./components/ProgramForm"
+import CreateProgram from "./pages/CreateProgram"
+
 
 function App() {
   
@@ -24,6 +25,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/:id" element={<ProgramDetails />} />
+        <Route path="/create" element={<CreateProgram />} />
       </Routes>
     </div>
   )

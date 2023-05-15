@@ -13,7 +13,7 @@ export default function ProgramForm() {
   const onSubmit = data => console.log(data);
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col w-1/2 mx-auto gap-y-2">
+    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col mx-auto gap-y-2">
       <input placeholder="Program Title" {...register("title", { required: true })} />
       <input placeholder="Program Description"{...register("description", { required: true })} />
       
