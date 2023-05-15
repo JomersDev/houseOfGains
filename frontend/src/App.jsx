@@ -20,7 +20,7 @@ function App() {
   console.log(programs)
 
   return (
-    <div className="flex flex-col items-center justify-center bg-gray-200">
+    <div className="flex flex-col items-center justify-center h-full bg-gray-200">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/:id" element={<ProgramDetails />} />

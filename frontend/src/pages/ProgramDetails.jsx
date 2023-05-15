@@ -12,8 +12,6 @@ export default function ProgramDetails() {
   // find workout program with id matching id in url parameters
   const program = programs.find(program => program._id == id)
 
-  console.log(program)
-
   return (
     <section className="p-4 mx-8 my-8 bg-white rounded-xl">
       <button className="px-2 text-sm text-purple-700 bg-purple-100" onClick={() => navigate('/')}>
@@ -46,6 +44,11 @@ export default function ProgramDetails() {
                                   <p className="text-sm">
                                     Rest: {exercise.rest}
                                   </p>
+                                  {exercise.notes && 
+                                    <p className="mt-2 text-xs text-gray-500">
+                                      {exercise.notes}
+                                    </p>
+                                  }
                               </div>
                       })}
                     </div>

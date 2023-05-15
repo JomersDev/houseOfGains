@@ -6,7 +6,7 @@ export default function Home() {
   const programs = useProgramStore(state => state.programs)
 
   return (
-    <section className="flex flex-col items-center justify-center">
+    <section className="flex flex-col items-center h-screen mt-8 bg-gray-200">
       <h1 className="mb-4 text-3xl font-bold text-purple-500">
         All Workouts
       </h1>
