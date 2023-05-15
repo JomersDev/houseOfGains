@@ -1,10 +1,18 @@
 import { useParams } from "react-router-dom"
+import { useProgramStore } from "../stateManagement/ProgramStore"
 
-export default function ProgramDetails({programs}) {
-
+export default function ProgramDetails() {
+  
   const { id } = useParams()
 
+  // zustand state management stateManagement/ProgramStore.js
+  const programs = useProgramStore(state => state.programs)
+
+  // find workout program with id matching id in url parameters
   const program = programs.find(program => program._id == id)
+
+  console.log(program)
+
   return (
     <section>
       <h1>
@@ -13,8 +21,8 @@ export default function ProgramDetails({programs}) {
       <p>
         WORKOUT ID: {id}
       </p>
-      <p>
         {program.description}
+      <p>
       </p>
       <div>
         {program.days.map(day => {

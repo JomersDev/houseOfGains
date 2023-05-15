@@ -1,31 +1,29 @@
 import { useState, useEffect } from "react"
-import ProgramForm from "./components/ProgramForm"
 import { Routes, Route } from 'react-router-dom'
+import { useProgramStore } from "./stateManagement/ProgramStore"
 
 // components & pages
 import Home from "./pages/Home"
 import ProgramDetails from "./pages/ProgramDetails"
+import ProgramForm from "./components/ProgramForm"
 
 function App() {
-
-  const [programs, setPrograms] = useState([])
+  
+  // zustand state management stateManagement/ProgramStore.js
+  const getPrograms = useProgramStore(state => state.fetchPrograms)
+  const programs = useProgramStore(state => state.programs)
 
   useEffect(() => {
-    const fetchWorkouts = async () => {
-      const response = await fetch('http://localhost:4000/api/programs')
-      const json = await response.json()
-      setPrograms(json)
-    }
-    fetchWorkouts()
-  },[])
+    getPrograms()
+  },[getPrograms])
 
   console.log(programs)
 
   return (
     <div className="w-screen h-screen bg-gray-200">
       <Routes>
-        <Route path="/" element={<Home programs={programs}/>} />
-        <Route path="/:id" element={<ProgramDetails programs={programs}/>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/:id" element={<ProgramDetails />} />
       </Routes>
     </div>
   )
